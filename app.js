@@ -18,7 +18,7 @@ m.requestPermission()
   
   return m.getToken();
 })
-then(function(t) {
+.then(function(t) {
   console.log('Got token:', t);
 })
 .catch(function() {
