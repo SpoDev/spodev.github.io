@@ -11,3 +11,5 @@ var config = {
 };
 
 firebase.initializeApp(config);
+
+var m = firebase.messaging();
