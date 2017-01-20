@@ -10,4 +10,12 @@ var config = {
 firebase.initializeApp(config);
 
 // Retrieve Firebase Messaging object.
-const messaging = firebase.messaging();
+const m = firebase.messaging();
+
+m.requestPermission()
+.then(function() {
+  console.log('We have permission :)');
+})
+.catch(function() {
+   console.log('We do not have permission :('); 
+});
