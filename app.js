@@ -24,3 +24,8 @@ m.requestPermission()
 .catch(function() {
    console.log('We do not have permission :('); 
 });
+
+
+m.onMessage(function(msg) {
+  console.log('Got new message:', msg);
+});
