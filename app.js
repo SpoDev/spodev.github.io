@@ -15,6 +15,11 @@ const m = firebase.messaging();
 m.requestPermission()
 .then(function() {
   console.log('We have permission :)');
+  
+  return m.getToken();
+})
+then(function(t) {
+  console.log('Got token:', t);
 })
 .catch(function() {
    console.log('We do not have permission :('); 
