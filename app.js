@@ -20,6 +20,7 @@ m.requestPermission()
 })
 .then(function(t) {
   console.log('Got token:', t);
+  document.getElementById('klient').innerHTML = t;
 })
 .catch(function() {
    console.log('We do not have permission :('); 
