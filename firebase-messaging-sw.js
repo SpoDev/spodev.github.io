@@ -19,8 +19,8 @@ m.setBackgroundMessageHandler(function(payload) {
   // Customize notification here
   const notificationTitle = 'Background Message Title';
   const notificationOptions = {
-    body: 'Background Message body.',
-    icon: '/firebase-logo.png'
+    body: payload.notification.body + ' :from_bg',
+    icon: '/fajn.png'
   };
 
   return self.registration.showNotification(notificationTitle,
